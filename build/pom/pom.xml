@@ -1,0 +1,171 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>com.endress.infoserve.commons.maven</groupId>
+        <artifactId>project-template</artifactId>
+        <version>02.01.00</version>
+    </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.webguitoolkit.ui</groupId>
+  <artifactId>webguitoolkit-pattern-pom</artifactId>
+  <name>WebGuiPatterns</name>
+  <version>01.03.12-SNAPSHOT</version> 
+  <packaging>pom</packaging>
+
+  <description>
+    Project as sample and HowTo for the Web GUI Toolkit pattern.
+  </description>
+  
+    <properties>
+        <prop.project.root.dir>${basedir}/../..</prop.project.root.dir>
+        <prop.project.group>Commons</prop.project.group>
+        <prop.project.name>${project.name}</prop.project.name>
+        <prop.project.war.src.dir>${prop.project.root.dir}/WebRoot</prop.project.war.src.dir>
+        <prop.jar.skipTestjar>true</prop.jar.skipTestjar>
+        <prop.aspectj.excludes>**/*</prop.aspectj.excludes>
+        <prop.java.sourceversion>1.5</prop.java.sourceversion>
+        <prop.java.targetversion>1.5</prop.java.targetversion>
+        <prop.project.artifact.dir>${prop.project.src.dir}/main/java</prop.project.artifact.dir>
+    </properties>
+  
+  <scm>
+    <connection>scm:svn:http://isw600.infoserve.endress.com/svn/Commons/WebGuiPatterns/trunk/WebGuiPatterns</connection>
+    <developerConnection>scm:svn:http://isw600.infoserve.endress.com/svn/Commons/WebGuiPatterns/trunk/WebGuiPatterns</developerConnection>
+    <url>http://isw600.infoserve.endress.com/svn/Commons/WebGuiPatterns/trunk/WebGuiPatterns</url>
+  </scm>
+
+  <modules>
+    <module>../jar/pom.xml</module>
+    <module>../../pom.xml</module>
+  </modules>  
+
+  <developers>
+    <developer>
+      <id>zaretzkep</id>
+      <name>Peter Zaretzke</name>
+      <email>peter.zaretzke@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+    <developer>
+      <id>hermannm</id>
+      <name>Martin Hermann</name>
+      <email>martin.hermann@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+    <developer>
+      <id>klugb</id>
+      <name>Benjamin Klug</name>
+      <email>benjamin.klug@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+	<developer>
+      <id>springhartt</id>
+      <name>Thorsten Springhart</name>
+      <email>thorsten.springhart@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+  </developers>    
+  
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.endress.infoserve.commons.maven</groupId>
+        <artifactId>project-template-dependencies</artifactId>
+        <version>02.01.00</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+    
+  <dependencies>    
+  	<dependency>
+  		<groupId>org.webguitoolkit.ui</groupId>
+  		<artifactId>webguitoolkit-ui</artifactId>
+  		<version>01.03.14-SNAPSHOT</version>
+  		<optional>false</optional>
+  	</dependency>
+  </dependencies> 
+
+  <reporting>
+    <outputDirectory>${prop.project.target.dir}/site</outputDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-changes-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <smtpHost>195.183.95.175</smtpHost>
+          <smtpPort implementation="java.lang.Integer">25</smtpPort>
+          <mailSender>
+            <name>Release Announcement</name>
+            <email>maven@isw600.infoserve.endress.com</email>
+          </mailSender>
+          <toAddresses>
+            <toAddress implementation="java.lang.String">thorsten.springhart@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">wolfram.kaiser@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">martin.hermann@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">lars.broessler@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">dirk.mueller@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">horst.timcke@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">alexander.sattler@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">jochen.gugel@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">thomas.weinschenk@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">peter.zaretzke@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">benjamin.klug@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">felix.breining@infoserve.endress.com</toAddress>
+            <toAddress implementation="java.lang.String">stefan.hauger@infoserve.endress.com</toAddress>
+          </toAddresses>
+          <failOnError>false</failOnError>
+          <aggregate>true</aggregate>
+          <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
+        </configuration>        
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>changes-report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+          <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+          <checkoutDirectoryName>.</checkoutDirectoryName>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+              <report>project-team</report>
+              <report>issue-tracking</report>
+              <report>scm</report>
+              <report>dependencies</report>
+              <report>cim</report>
+              <report>summary</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>      
+    </plugins>
+  </reporting>
+</project>

@@ -1,0 +1,45 @@
+/*
+* CSS for Calendar View
+*/
+.calLeaf {
+	background-color: #FFFFFF;
+	text-align: center;
+	border-style:outset; 
+	width: 50px;
+}
+
+.year {
+	background-color: #FF0099;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffFFFF;
+	font-size: 15px !important;
+	font-weight: bold;
+}
+
+.day {
+	color: #000000;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 30px !important;
+	font-weight: bold;
+}
+
+.month {
+	color: #000000;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12px !important;
+	font-weight: bold;
+	width: 50px;
+}
+
+.question {
+	background-color: #FF0099;
+	vertical-align: middle;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 45px !important;
+	font-weight: bold;
+}
+

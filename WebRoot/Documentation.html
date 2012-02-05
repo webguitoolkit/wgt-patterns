@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>Documentation.html</title>
+
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="this is my page">
+		<meta http-equiv="content-type"
+			content="text/html; charset=ISO-8859-1">
+
+		<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+	</head>
+
+	<body>
+		<h1>
+			Gui Controls Documentation
+		</h1>
+		By Peter Zaretzke
+		<h2>
+			Introduction
+		</h2>
+		<br>
+		The GUI Controls are intended to ...
+		<br>
+		Programming style : Java only
+		<br>
+		Develop Component to be reused
+		<h2>
+			What you need
+		</h2>
+		<h3>
+			GUI Controls
+		</h3>
+		<h3>
+			Tree Script
+		</h3>
+		<h2>
+			The Hello Web Application
+		</h2>
+		<h3>
+			Setup an Eclipse Project
+		</h3>
+		<h3>
+			Setup WEB.XML
+		</h3>
+		<h3>
+			Setup DWR.XML
+		</h3>
+		<h3>Hello Web</h3>
+		<pre>
+package com.mycomp.gui.sample.pages;
+
+import com.endress.infoserve.gui.Page;
+import com.endress.infoserve.gui.form.Label;
+
+public class HelloWorldSample extends Page{
+    
+    protected void pageInit() {
+        
+        addHeaderCSS("./wgt-resources/guicontrol.css");
+        addHeaderCSS("./wgt-resources/guicontrol_bb.css");
+
+        // add label
+        Label label1 = getFactory().createLabel("Hello Web!");
+        add( label1 );
+    }
+
+    protected void pageLoad() {     
+    }
+
+    protected String title() {
+        return "Hello Web Sample";
+    }
+}
+		</pre>
+		<h2>
+			Available Controls
+		</h2>
+		<h3>
+			Label
+		</h3>
+		<h3>
+			Button
+		</h3>
+		<h3>
+			Table
+		</h3>
+		<h3>
+			Tree
+		</h3>
+		<h3>
+			Text
+		</h3>
+
+		<h2>
+			Creating Controls
+		</h2>
+		<h3>
+			The WebGuiFactory
+		</h3>
+		<h3>
+			The AbstractGuiFactory
+		</h3>
+
+		<h2>
+			Usage Patterns
+		</h2>
+		<h3>
+			CRUD Form
+		</h3>
+		<h3>
+			Master Detail
+		</h3>
+		<h3>
+			Using Dynamic Programming
+		</h3>
+		Principles of an View:
+		<pre>
+public void onAction(Event event) {
+   BaseUtil.exportSubTree(viewConnector);
+   viewConnector.scheduleRedraw();
+
+   // create controls here ... 
+
+   BaseUtil.initComponents(layout);
+   
+   // load data here ...
+}
+    
+		</pre>
+		<h2>
+			Find your style
+		</h2>
+		<h2>
+			i18n - How to write an international application
+		</h2>
+	</body>
+</html>

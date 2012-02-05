@@ -1,0 +1,80 @@
+table.wgtCalendar {
+	border-collapse: separate;
+	border: 1px solid #9DABCE;
+	border-width: 0px 0px 1px 1px;
+	margin: 10px auto;
+	font-size: 20px;
+}
+.wgtCalendar td, .wgtCalendar th {
+	width: 22px;
+	height: 21px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(../images/wgt/wgtcalendar/cells21.png);
+	color: #444;
+	position: relative;
+}
+.wgtCalendarHeader {
+	height: 21px !important;
+	font-weight: bold;
+	font-size: 12px !important;
+}
+.wgtCalendar td:hover, .wgtCalendar th:hover {
+	background-position: 0px -21px;
+	color: #222;
+}
+td.wgtCalendar_date_has_event {
+	background-position: 162px 0px;
+	color: white;
+}
+
+td.wgtCalendar_outOfMonth {
+	color: gray;
+}
+td.wgtCalendar_monthHeader {
+	background: url(../images/wgt/wgtcalendar/calpad110.jpg);
+}
+
+td.wgtCalendar_date_has_event:hover {
+	background-position: 162px -21px;
+}
+td.wgtCalendar_padding {
+	background: url(../images/wgt/wgtcalendar/calpad21.jpg);
+}
+td.wgtCalendar_today {
+	background-position: 21px 0px;
+	color: white;
+}
+td.wgtCalendar_today:hover {
+	background-position: 21px -21px;
+}
+
+.wgtCalendarBase{
+	border:0px none;
+	padding:0px;
+}
+
+.wgtCalendar a{
+	text-decoration: none;
+	color: black;
+}
+
+td.wgtCalendar_today a{
+	color: white;
+}
+
+td.wgtCalendar_outOfMonth a{
+	color: gray;
+}
+
+td.wgtCalendarHasEvent a {
+	font-weight: bold;
+}
+
+.wgtCalendarDay td{
+
+}
+.wgtCalendarDay table{
+    margin: 0px;
+    padding: 0px;
+}

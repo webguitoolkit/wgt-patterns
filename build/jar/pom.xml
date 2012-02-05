@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>org.webguitoolkit.ui</groupId>
+        <artifactId>webguitoolkit-pattern-pom</artifactId>
+        <version>01.03.12-SNAPSHOT</version>
+    </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.webguitoolkit.ui</groupId>
+  <artifactId>webguitoolkit-pattern-bin</artifactId>
+  <name>WebGuiPatterns</name>
+  <packaging>jar</packaging>
+
+  <description>
+    Project as sample and HowTo for the Web GUI Toolkit pattern.
+  </description>
+  
+    <properties>
+        <prop.project.root.dir>${basedir}/../..</prop.project.root.dir>
+        <prop.project.group>Commons</prop.project.group>
+        <prop.project.name>${project.name}</prop.project.name>
+        <prop.site.generateReports>true</prop.site.generateReports>
+        <prop.javadoc.attach-javadocs>true</prop.javadoc.attach-javadocs>
+        <prop.source.generateSourceJar>true</prop.source.generateSourceJar>
+        <prop.jar.skipTestjar>true</prop.jar.skipTestjar>
+        <prop.test.skip>false</prop.test.skip>
+        <prop.aspectj.excludes>**/*</prop.aspectj.excludes>
+        <prop.java.sourceversion>1.5</prop.java.sourceversion>
+        <prop.java.targetversion>1.5</prop.java.targetversion>
+        <prop.project.artifact.dir>${prop.project.src.dir}/main/java</prop.project.artifact.dir>
+    </properties>
+  
+  <scm>
+    <connection>scm:svn:http://isw600.infoserve.endress.com/svn/Commons/WebGuiPatterns/trunk/WebGuiPatterns</connection>
+    <developerConnection>scm:svn:http://isw600.infoserve.endress.com/svn/Commons/WebGuiPatterns/trunk/WebGuiPatterns</developerConnection>
+    <url>http://isw600.infoserve.endress.com/svn/Commons/WebGuiPatterns/trunk/WebGuiPatterns</url>
+  </scm>
+  
+  <developers>
+    <developer>
+      <id>zaretzkep</id>
+      <name>Peter Zaretzke</name>
+      <email>peter.zaretzke@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+    <developer>
+      <id>hermannm</id>
+      <name>Martin Hermann</name>
+      <email>martin.hermann@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+    <developer>
+      <id>klugb</id>
+      <name>Benjamin Klug</name>
+      <email>benjamin.klug@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+	<developer>
+      <id>springhartt</id>
+      <name>Thorsten Springhart</name>
+      <email>thorsten.springhart@infoserve.endress.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <organization>Endress+Hauser</organization>
+    </developer>
+  </developers>    
+  
+</project>

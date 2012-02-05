@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+//var test = "{total: 10,page: 1,records: 100,rows: [{id: '0',type: 'type 0',name: 'name 0',description: 'description 0'},{id: '1',type: 'type 1',name: 'name 1',description: 'description 1'},{id: '2',type: 'type 2',name: 'name 2',description: 'description 2'},{id: '3',type: 'type 3',name: 'name 3',description: 'description 3'},{id: '4',type: 'type 4',name: 'name 4',description: 'description 4'},{id: '5',type: 'type 5',name: 'name 5',description: 'description 5'},{id: '6',type: 'type 6',name: 'name 6',description: 'description 6'},{id: '7',type: 'type 7',name: 'name 7',description: 'description 7'},{id: '8',type: 'type 8',name: 'name 8',description: 'description 8'},{id: '9',type: 'type 9',name: 'name 9',description: 'description 9'}]}";
+var test = "{\"total\": \"total\"}";
+
+var normalJS = eval("("+test+")");
+alert("normal:" + normalJS.total );
+
+var parsedJS = JSON.parse(test);
+alert("parsed:" + parsedJS.total );
+
+</script>
+</head>
+
+</html>

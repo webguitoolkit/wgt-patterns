@@ -1,0 +1,10 @@
+.treeStyle{overflow:scroll;width:400px;height:400px;}
+.splitScreenStyle{width:80%;overflow:hidden;}
+.topLabelStyle{font-size:2.0em;font-weight:bold;}
+.bottomStyle{width:80%;overflow:hidden;}
+.bottomHeaderStyle{font-size:2.0em;font-weight:bold;}
+.width100{width:100px;}
+.boldLabel{background-color:#f0f0f0;font-size:20px;}
+.processDialogBarLayout{width:100%;}
+.processDialogBarUnprocessed{width:99%;height:20px;border:1px solid #BBBBBB;background:#DDDDDD url(../images/wgt/bg-button.gif) repeat-x scroll 0 0;}
+.processDialogBarProcessed{width:1px;height:20px;background-color: blue;background:#B0D6FA url(../images/wgt/table/tdheader.gif) repeat-x scroll center top;}

@@ -1,0 +1,130 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.webguitoolkit.maven</groupId>
+		<artifactId>wgt-project-template</artifactId>
+		<version>01.00.00</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.webguitoolkit.ui</groupId>
+	<artifactId>webguitoolkit-pattern</artifactId>
+	<name>WebGuiPatterns</name>
+	<packaging>war</packaging>
+
+	<description>
+    Project as sample and HowTo for the Web GUI Toolkit pattern.
+  </description>
+
+	<properties>
+		<prop.project.root.dir>${basedir}</prop.project.root.dir>
+		<prop.project.group>Commons</prop.project.group>
+		<prop.project.name>${project.name}</prop.project.name>
+		<prop.project.war.src.dir>${prop.project.root.dir}/WebRoot</prop.project.war.src.dir>
+		<prop.site.generateReports>true</prop.site.generateReports>
+		<prop.javadoc.attach-javadocs>true</prop.javadoc.attach-javadocs>
+		<prop.source.generateSourceJar>true</prop.source.generateSourceJar>
+		<prop.jar.skipTestjar>true</prop.jar.skipTestjar>
+		<prop.test.skip>false</prop.test.skip>
+		<prop.project.artifact.dir>${prop.project.src.dir}/main/java</prop.project.artifact.dir>
+	</properties>
+
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/webguitoolkit/wgt-patterns/issues</url>
+	</issueManagement>
+
+	<scm>
+		<connection>scm:git:git@github.com:webguitoolkit/wgt-patterns.git</connection>
+		<developerConnection>scm:git:git@github.com:webguitoolkit/wgt-patterns.git</developerConnection>
+		<url>git@github.com:webguitoolkit/wgt-patterns.git</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>zaretzkep</id>
+			<name>Peter Zaretzke</name>
+			<email>peter@17sprints.de</email>
+			<roles>
+				<role>Developer</role>
+				<role>Project Manager</role>
+			</roles>
+			<organization>17sprints GmbH</organization>
+		</developer>
+		<developer>
+			<id>hermannm</id>
+			<name>Martin Hermann</name>
+			<email>martin.hermann@infoserve.endress.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>Endress+Hauser</organization>
+		</developer>
+		<developer>
+			<id>klugb</id>
+			<name>Benjamin Klug</name>
+			<email>benjamin.klug@infoserve.endress.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>Endress+Hauser</organization>
+		</developer>
+		<developer>
+			<id>springhartt</id>
+			<name>Thorsten Springhart</name>
+			<email>thorsten.springhart@infoserve.endress.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>Endress+Hauser</organization>
+		</developer>
+	</developers>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.webguitoolkit.maven</groupId>
+				<artifactId>wgt-project-template-dependencies</artifactId>
+				<version>01.00.00</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.webguitoolkit.ui</groupId>
+			<artifactId>webguitoolkit-ui</artifactId>
+			<version>01.03.17-SNAPSHOT</version>
+			<optional>false</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webguitoolkit.ui</groupId>
+			<artifactId>wgt-ui-addons</artifactId>
+			<version>01.00.02-SNAPSHOT</version>
+			<optional>false</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webguitoolkit.components</groupId>
+			<artifactId>webguitoolkit-components</artifactId>
+			<version>01.03.16-SNAPSHOT</version>
+			<optional>false</optional>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warName>webguitoolkit-pattern</warName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
