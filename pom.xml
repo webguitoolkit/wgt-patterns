@@ -26,6 +26,7 @@
 		<prop.source.generateSourceJar>true</prop.source.generateSourceJar>
 		<prop.jar.skipTestjar>true</prop.jar.skipTestjar>
 		<prop.test.skip>false</prop.test.skip>
+		<prop.aspectj.excludes>**/*</prop.aspectj.excludes>
 		<prop.project.artifact.dir>${prop.project.src.dir}/main/java</prop.project.artifact.dir>
 	</properties>
 
