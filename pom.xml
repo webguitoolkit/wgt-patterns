@@ -9,7 +9,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.webguitoolkit.ui</groupId>
 	<artifactId>webguitoolkit-pattern</artifactId>
-	<name>WebGuiPatterns</name>
+	<name>wgt-patterns</name>
 	<packaging>war</packaging>
 
 	<description>
@@ -128,4 +128,5 @@
 		</plugins>
 	</build>
 
+	<url>https://webguitoolkit@github.com/webguitoolkit/wgt-patterns.git</url>
 </project>
