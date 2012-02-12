@@ -100,17 +100,17 @@
 			<version>01.03.17-SNAPSHOT</version>
 			<optional>false</optional>
 		</dependency>
-
+<!-- 
 		<dependency>
 			<groupId>org.webguitoolkit.ui</groupId>
 			<artifactId>wgt-ui-addons</artifactId>
 			<version>01.00.02-SNAPSHOT</version>
 			<optional>false</optional>
 		</dependency>
-
+ -->
 		<dependency>
 			<groupId>org.webguitoolkit.components</groupId>
-			<artifactId>webguitoolkit-components</artifactId>
+			<artifactId>wgt-components</artifactId>
 			<version>01.03.16-SNAPSHOT</version>
 			<optional>false</optional>
 		</dependency>
@@ -122,7 +122,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
-					<warName>webguitoolkit-pattern</warName>
+					<warName>wgt-patterns</warName>
 				</configuration>
 			</plugin>
 		</plugins>

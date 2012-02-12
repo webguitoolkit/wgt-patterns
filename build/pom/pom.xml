@@ -95,7 +95,7 @@
   	<dependency>
   		<groupId>org.webguitoolkit.ui</groupId>
   		<artifactId>webguitoolkit-ui</artifactId>
-  		<version>01.03.14-SNAPSHOT</version>
+  		<version>01.03.17-SNAPSHOT</version>
   		<optional>false</optional>
   	</dependency>
   </dependencies> 
